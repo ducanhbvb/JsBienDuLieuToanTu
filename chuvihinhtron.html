@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinhchuvi</title>
+</head>
+<body>
+<form id="nhapso">
+    nhap ban kinh hinh tròn: <input type="text" id="banKinh">
+        <input type="button" id="" value="Tinh chu vi" onclick="tinhChuVi();">
+</form>
+<script>
+    function tinhChuVi(){
+    let bankinh= parseInt(document.getElementById("banKinh").value);
+    let chuVi= bankinh*2*3.1415;
+    document.writeln("chu vi hinh tron="+chuVi.toFixed(3));
+    }
+</script>
+
+</body>
+</html>
