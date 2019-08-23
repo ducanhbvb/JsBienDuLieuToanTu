@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhapdiem</title>
+</head>
+<body>
+<form id="nhapDiem">
+    nhap diem vat ly: <input type="text" id="vatly" class="monhoc">
+    nhap diem hoa hoc: <input type="text" id="hoahoc" class="monhoc">
+    nhap diem sinh hoc: <input type="text" id="sinhhoc" class="monhoc">
+
+
+    <input type="button" id="click thuc hien" value ="Lam Bai" onclick="tinhDiemTrungBinh();">
+
+</form>
+<script>
+
+    function tinhDiemTrungBinh() {
+        let vatly =parseInt( document.getElementById("vatly").value);
+
+        let hoahoc =parseInt( document.getElementById("hoahoc").value);
+        let sinhhoc = parseInt(document.getElementById("sinhhoc").value);
+        let diemTB = ((vatly + hoahoc + sinhhoc) / 3);
+
+        document.write("diem trung binh ="+diemTB.toFixed(2));
+        let diemTong= vatly+ hoahoc+ sinhhoc;
+        document.write("<br/>");
+        document.write("diem tong ="+diemTong.toFixed(2));
+    }
+</script>
+
+</body>
+</html>
