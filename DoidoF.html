@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pow</title>
+</head>
+<body>
+<form id="nhapso">
+    nhap do C: <input type="text" id="doC">
+    <input type="button" id="ssadsa" value="Đổi sang độ F" onclick="doinhietdo();">
+
+</form>
+<script>
+    function doinhietdo() {
+        let doC= parseInt(document.getElementById("doC").value);
+        let doF= doC*9/5+32;
+        document.write("Độ F="+doF);
+        //alert(doF);
+    }
+</script>
+</body>
+</html>
